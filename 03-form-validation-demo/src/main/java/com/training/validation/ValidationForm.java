@@ -15,6 +15,7 @@ public class ValidationForm extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(5, 2, 10, 10));
+        ((JComponent) getContentPane()).setBorder(BorderFactory.createEmptyBorder(12, 12, 12, 12));
 
         nameField = new JTextField();
         ageField = new JTextField();

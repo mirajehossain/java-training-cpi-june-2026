@@ -10,6 +10,7 @@ public class DashboardFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
+        ((JComponent) getContentPane()).setBorder(BorderFactory.createEmptyBorder(12, 12, 12, 12));
 
         JLabel label = new JLabel("Welcome! Login successful.", SwingConstants.CENTER);
         JButton logoutButton = new JButton("Logout");

@@ -21,6 +21,7 @@ public class ProductCrudFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout(10, 10));
+        ((JComponent) getContentPane()).setBorder(BorderFactory.createEmptyBorder(12, 12, 12, 12));
 
         JPanel formPanel = new JPanel(new GridLayout(2, 2, 10, 10));
 
