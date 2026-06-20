@@ -1,0 +1,9 @@
+package com.training.crud;
+
+import javax.swing.SwingUtilities;
+
+public class Main {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new ProductCrudFrame().setVisible(true));
+    }
+}

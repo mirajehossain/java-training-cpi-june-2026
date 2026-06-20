@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS crud_demo_db;
+
+USE crud_demo_db;
+
+CREATE TABLE IF NOT EXISTS products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DOUBLE NOT NULL
+);
