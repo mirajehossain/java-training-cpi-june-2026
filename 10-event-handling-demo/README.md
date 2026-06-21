@@ -1,5 +1,7 @@
 # Event Handling Demo
 
+বাংলা গাইড: [README.bn.md](README.bn.md)
+
 ## Objective
 
 Learn core Swing event handling patterns in one screen.
