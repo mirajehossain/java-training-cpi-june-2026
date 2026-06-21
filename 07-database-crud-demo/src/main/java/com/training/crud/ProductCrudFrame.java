@@ -233,4 +233,8 @@ public class ProductCrudFrame extends JFrame {
         priceField.setText("");
         table.clearSelection();
     }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new ProductCrudFrame().setVisible(true));
+    }
 }

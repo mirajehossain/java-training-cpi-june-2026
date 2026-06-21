@@ -24,5 +24,18 @@ public class ExceptionDemo {
             System.out.println("Program finished.");
             scanner.close();
         }
+
+
+        try {
+            // A reference variable is declared but assigned to null
+            String text = null;
+            // CRASH: Attempting to call an instance method (.length()) on a null reference
+            System.out.println("The length of the string is: " + text.length());
+        } catch (NullPointerException e) {
+            System.out.println("Error: Attempted to access a method on a null reference.");
+            System.out.println("Exception message: " + e.getMessage());
+        } finally {
+            System.out.println("Null pointer exception handling completed.");
+        }
     }
 }

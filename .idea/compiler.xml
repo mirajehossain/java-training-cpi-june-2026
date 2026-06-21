@@ -13,6 +13,7 @@
         <module name="exception-handling-demo" />
         <module name="database-crud-demo" />
         <module name="login-system" />
+        <module name="event-handling-demo" />
         <module name="form-validation-demo" />
         <module name="jdbc-insert-demo" />
       </profile>

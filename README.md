@@ -13,6 +13,7 @@ Open each folder separately as a Maven project.
 7. 07-database-crud-demo
 8. 08-phonebook-management-system
 9. 09-servlet-hello-demo
+10. 10-event-handling-demo
 
 ## How to run normal projects
 
