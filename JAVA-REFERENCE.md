@@ -8,6 +8,9 @@ Everything used across all 11 projects in one place.
 
 Swing is Java's built-in library for building **desktop GUI (Graphical User Interface) applications** — windows, buttons, text fields, tables, and everything visual you see in a desktop app.
 
+#### Technical Evolution: 
+Swing was introduced in 1998 to resolve the limitations of the original Abstract Window Toolkit (AWT). While AWT wrapped native platform components—causing design inconsistencies and performance overhead—Swing painted widgets itself to guarantee uniform rendering. Oracle has since introduced JavaFX as the modern successor for richer internet applications and hardware acceleration. However, Swing remains widely active for legacy code maintenance and industrial desktop systems
+
 ### Where it comes from
 
 Swing is part of the **Java Standard Library** (no extra download needed). It lives in the `javax.swing` package. You import it like this:
