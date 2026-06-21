@@ -4,6 +4,73 @@ Everything used across all 11 projects in one place.
 
 ---
 
+## What is Java Swing?
+
+Swing is Java's built-in library for building **desktop GUI (Graphical User Interface) applications** — windows, buttons, text fields, tables, and everything visual you see in a desktop app.
+
+### Where it comes from
+
+Swing is part of the **Java Standard Library** (no extra download needed). It lives in the `javax.swing` package. You import it like this:
+
+```java
+import javax.swing.*;   // all Swing components
+import java.awt.*;      // layouts and colors (AWT = Abstract Window Toolkit)
+```
+
+Swing is built on top of an older library called **AWT** (Abstract Window Toolkit). AWT provides the foundation (layouts, colors, events), and Swing adds higher-level components on top of it.
+
+### How a Swing app is structured
+
+```
+JFrame  (the window)
+  └── Content Pane  (the drawable area inside the window)
+        └── Layout Manager  (decides how to position things)
+              ├── JPanel  (optional sub-group)
+              │     ├── JLabel
+              │     └── JTextField
+              ├── JButton
+              └── JTable
+```
+
+Every Swing app follows this pattern:
+
+1. Create a `JFrame` (the window).
+2. Set a layout to control positioning.
+3. Add components (`JButton`, `JTextField`, etc.).
+4. Attach event listeners to react to user actions.
+5. Call `setVisible(true)` to show the window.
+
+### Swing vs other UI approaches
+
+| Approach        | What it is              | Used for                                  |
+| --------------- | ----------------------- | ----------------------------------------- |
+| **Swing**       | Java desktop UI library | Desktop apps (these training projects)    |
+| **JavaFX**      | Modern Java UI library  | Desktop apps (newer alternative to Swing) |
+| **Servlet/JSP** | Java web server code    | Browser-based web apps (project 09)       |
+| **HTML/CSS/JS** | Frontend web code       | Web pages in browser                      |
+
+### Key packages you will see
+
+| Package          | What's inside                                                         |
+| ---------------- | --------------------------------------------------------------------- |
+| `javax.swing`    | All UI components: `JFrame`, `JButton`, `JLabel`, `JTextField`, etc.  |
+| `java.awt`       | Layouts: `GridLayout`, `BorderLayout`, `FlowLayout`; `Color`, `Font`  |
+| `java.awt.event` | Event classes: `ActionEvent`, `KeyEvent`, `MouseEvent`, `WindowEvent` |
+
+### Important rule: Swing is single-threaded
+
+All Swing UI must be created and updated on one special thread called the **Event Dispatch Thread (EDT)**. This is why every Swing app starts with:
+
+```java
+public static void main(String[] args) {
+    SwingUtilities.invokeLater(() -> new MyApp().setVisible(true));
+}
+```
+
+`invokeLater` schedules the UI creation on the EDT safely. If you skip this, the app may work most of the time but crash randomly.
+
+---
+
 ## Table of Contents
 
 0. [How Events Work in Swing — Concept](#0-how-events-work-in-swing--concept)
