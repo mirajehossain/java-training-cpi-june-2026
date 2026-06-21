@@ -2,6 +2,11 @@
 
 Open each folder separately as a Maven project.
 
+## Master Reference
+
+All components, events, layouts, JDBC, and Java concepts used across all projects explained in one file:
+[JAVA-REFERENCE.md](JAVA-REFERENCE.md)
+
 ## Project list
 
 1. 01-exception-handling-demo
@@ -14,6 +19,7 @@ Open each folder separately as a Maven project.
 8. 08-phonebook-management-system
 9. 09-servlet-hello-demo
 10. 10-event-handling-demo
+11. 11-advanced-calculator
 
 ## How to run normal projects
 

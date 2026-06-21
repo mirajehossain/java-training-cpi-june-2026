@@ -127,7 +127,7 @@ public class EventHandlingDemo extends JFrame {
 
         switch (selected) {
             case "Red":
-                mouseArea.setBackground(new Color(255, 220, 220));
+                mouseArea.setBackground(Color.RED);
                 break;
             case "Green":
                 mouseArea.setBackground(new Color(220, 255, 220));
