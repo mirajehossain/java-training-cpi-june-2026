@@ -21,5 +21,7 @@
     <file url="file://$PROJECT_DIR$/09-servlet-hello-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/10-event-handling-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/10-event-handling-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/11-advanced-calculator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/11-advanced-calculator/src/main/resources" charset="UTF-8" />
   </component>
 </project>

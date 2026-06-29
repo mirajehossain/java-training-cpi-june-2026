@@ -9,17 +9,13 @@ All components, events, layouts, JDBC, and Java concepts used across all project
 
 ## Project list
 
-1. 01-exception-handling-demo
-2. 02-swing-components-form
-3. 03-form-validation-demo
-4. 04-basic-calculator
-5. 05-jdbc-insert-demo
-6. 06-login-system
-7. 07-database-crud-demo
-8. 08-phonebook-management-system
-9. 09-servlet-hello-demo
-10. 10-event-handling-demo
-11. 11-advanced-calculator
+1. form-validation-demo
+2. basic-calculator
+3. login-system
+4. database-crud-demo
+5. phonebook-management-system
+6. event-handling-demo
+7. advanced-calculator
 
 ## How to run normal projects
 
@@ -30,22 +26,30 @@ mvn exec:java
 
 ## For database projects
 
-Run `database.sql` first.
+Run `database.sql` first to create the database and tables.
 
-Example:
+### Option 1 — Terminal (MySQL CLI)
 
 ```bash
 mysql -u root -p < database.sql
 ```
 
-Default MySQL setting in code:
+### Option 2 — XAMPP
+
+1. Start **Apache** and **MySQL** from the XAMPP Control Panel.
+2. Open your browser and go to `http://localhost/phpmyadmin`.
+3. Click **Import** in the top menu.
+4. Click **Choose File** and select the `database.sql` file from the project folder.
+5. Click **Go** to run the import.
+
+### Default MySQL settings in code
 
 ```text
 username: root
-password: empty
+password: empty (leave blank)
 ```
 
-If your MySQL has password, update `PASSWORD` in DBConnection.java.
+If your MySQL has a password set (e.g. via XAMPP), update `PASSWORD` in `DBConnection.java`.
 
 ## For Servlet project
 

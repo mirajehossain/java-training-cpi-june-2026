@@ -8,15 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="basic-calculator" />
         <module name="phonebook-management-system" />
-        <module name="servlet-hello-demo" />
-        <module name="swing-components-form" />
-        <module name="exception-handling-demo" />
         <module name="database-crud-demo" />
+        <module name="advanced-calculator" />
         <module name="login-system" />
         <module name="event-handling-demo" />
         <module name="form-validation-demo" />
-        <module name="jdbc-insert-demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="exception-handling-demo" target="17" />
+      <module name="jdbc-insert-demo" target="17" />
+      <module name="servlet-hello-demo" target="17" />
+      <module name="swing-components-form" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
