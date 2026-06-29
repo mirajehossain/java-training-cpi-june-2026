@@ -2,11 +2,6 @@
 
 Open each folder separately as a Maven project.
 
-## Master Reference
-
-All components, events, layouts, JDBC, and Java concepts used across all projects explained in one file:
-[JAVA-REFERENCE.md](JAVA-REFERENCE.md)
-
 ## Project list
 
 1. form-validation-demo
